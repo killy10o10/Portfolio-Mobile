@@ -44,7 +44,7 @@ header {
 #headline {
   display: flex;
   flex-direction: column;
-  background-image: url(/resource/header-illsutration-mobile.svg);
+  background-image: url(../resource/header-illsutration-mobile.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
