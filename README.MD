@@ -2,6 +2,8 @@
 
 # Portfolio Project
 
+![Screenshot](portfolio-mobile-screenshot.png)
+
 > Simple Portfolio project to showcase some of my works as a software developer.
 
 ## Built With
