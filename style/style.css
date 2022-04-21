@@ -1,5 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #172b4d;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.dark-blue {
+  color: #172b4d;
+}
+
+.sea-green {
+  color: #36b37e;
+}
+
+#logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#menu {
+  font-size: 20px;
+}
+
+#headline {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../resource/header-illsutration-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heading {
+  margin: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 327px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#headline-description {
+  text-align: center;
+  line-height: 28px;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 327px;
+}
+
+.social-handles {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
+  align-self: center;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.arrow {
+  display: flex;
+  align-self: center;
+  padding: 10px;
+  cursor: pointer;
 }
