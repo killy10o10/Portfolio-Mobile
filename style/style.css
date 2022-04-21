@@ -49,7 +49,7 @@ header {
   background-position: center;
 }
 
-#headline-intro {
+.heading {
   margin: 64px;
   margin-left: auto;
   margin-right: auto;
