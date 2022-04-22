@@ -50,15 +50,18 @@ header {
   padding: 64px 24px;
 }
 
+#intro{
+  display: flex;
+  flex-direction: column;
+  margin: 58px 0;
+}
+
 .heading {
   min-width: 327px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  margin: 58px 0;
 }
 
 #headline-description {
@@ -75,10 +78,10 @@ header {
   align-self: center;
   font-size: 25px;
   margin: 58px 0;
+  list-style: none;
 }
 
 .arrow {
-  display: flex;
   align-self: center;
   cursor: pointer;
   padding: 8px;
