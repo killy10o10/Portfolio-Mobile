@@ -47,10 +47,10 @@ header {
   background-image: url(../resource/header-illsutration-mobile.svg);
   background-repeat: no-repeat;
   background-position: center;
+  padding: 64px 24px;
 }
 
 .heading {
-  margin: 64px;
   margin-left: auto;
   margin-right: auto;
   width: 327px;
