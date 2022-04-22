@@ -46,29 +46,26 @@ header {
   flex-direction: column;
   background-image: url(../resource/header-illsutration-mobile.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: contain;
   padding: 64px 24px;
 }
 
 .heading {
-  margin-left: auto;
-  margin-right: auto;
-  width: 327px;
+  min-width: 327px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: 58px 0;
 }
 
 #headline-description {
   text-align: center;
   line-height: 28px;
   font-size: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 327px;
+  min-width: 327px;
 }
 
 .social-handles {
@@ -76,13 +73,13 @@ header {
   justify-content: space-evenly;
   width: 200px;
   align-self: center;
-  padding: 20px;
   font-size: 25px;
+  margin: 58px 0;
 }
 
 .arrow {
   display: flex;
   align-self: center;
-  padding: 10px;
   cursor: pointer;
+  padding: 8px;
 }
