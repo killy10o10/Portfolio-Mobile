@@ -50,7 +50,7 @@ header {
   padding: 64px 24px;
 }
 
-#intro{
+#intro {
   display: flex;
   flex-direction: column;
   margin: 58px 0;
@@ -85,4 +85,73 @@ header {
   align-self: center;
   cursor: pointer;
   padding: 8px;
+}
+
+#projects {
+  padding: 26px 26px;
+  display: flex;
+}
+
+.works {
+  display: grid;
+  border-radius: 8px;
+  border: 1px solid #d0d9d4;
+}
+
+.thumbnail {
+  min-height: 222px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  background: #ebf0ee;
+}
+
+
+.work-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: -5px;
+  background: white;
+  border-radius: 8px;
+  min-height: 222px;
+}
+
+.heading-2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  width: 300px;
+}
+
+.flex-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+  margin: 16px 0 29px 0;
+}
+
+.flex-list li {
+  background: #ebf0ee;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.button {
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+  width: 122px;
+  align-self: center;
+}
+
+.button:active {
+  background: #008552;
 }
