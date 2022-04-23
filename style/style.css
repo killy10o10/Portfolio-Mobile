@@ -87,8 +87,6 @@ header {
   padding: 8px;
 }
 
-
-
 #projects {
   padding: 26px;
   display: grid;
@@ -111,7 +109,6 @@ header {
   border-radius: 8px 8px 0 0;
   background: #ebf0ee;
 }
-
 
 .work-info {
   display: flex;
@@ -157,7 +154,6 @@ header {
   cursor: pointer;
   width: 122px;
   align-self: center;
- 
 }
 
 .button:active {
