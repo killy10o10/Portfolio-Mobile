@@ -87,13 +87,20 @@ header {
   padding: 8px;
 }
 
+
+
 #projects {
-  padding: 26px 26px;
-  display: flex;
+  padding: 26px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  justify-content: center;
 }
 
 .works {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   border-radius: 8px;
   border: 1px solid #d0d9d4;
 }
@@ -112,7 +119,7 @@ header {
   margin-top: -5px;
   background: white;
   border-radius: 8px;
-  min-height: 222px;
+  padding: 16px;
 }
 
 .heading-2 {
@@ -150,6 +157,7 @@ header {
   cursor: pointer;
   width: 122px;
   align-self: center;
+ 
 }
 
 .button:active {
