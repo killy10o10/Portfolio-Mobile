@@ -87,10 +87,11 @@ header {
   padding: 8px;
 }
 
+/* Projects Section */
+
 #projects {
   padding: 26px;
   display: grid;
-  grid-template-columns: repeat(3, auto);
   grid-row-gap: 20px;
   grid-column-gap: 20px;
   justify-content: center;
@@ -152,10 +153,72 @@ header {
   font-size: 17px;
   color: #fff;
   cursor: pointer;
-  width: 122px;
   align-self: center;
+  display: flex;
 }
 
 .button:active {
   background: #008552;
+}
+
+/* About Me Section */
+#about {
+  background-image: url(../resource/illustration-\ about\ me-\ mobile.png);
+  background-repeat: no-repeat;
+  background-position: contain;
+  padding: 0 24px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#about-text {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 24px 0;
+  text-align: center;
+  min-width: 351px;
+  align-self: center;
+}
+
+#tools {
+  margin-top: 30px;
+  padding: 26px;
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  justify-content: center;
+}
+
+.languages {
+  min-height: 327px;
+  min-width: 331px;
+  background-color: #ebf0ee;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.languages img {
+  align-self: center;
+  margin-top: 40px;
+}
+
+.languages h4 {
+  align-self: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.languages ul {
+  margin-top: 70px;
+}
+
+.languages ul li {
+  color: #36b37e;
+  background: white;
+  border-radius: 4px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 12px;
 }
