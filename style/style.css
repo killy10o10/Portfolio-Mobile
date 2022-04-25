@@ -212,6 +212,7 @@ header {
 
 .languages ul {
   margin-top: 70px;
+  /* display: inline; */
 }
 
 .languages ul li {
@@ -221,4 +222,5 @@ header {
   padding: 12px;
   font-weight: 600;
   font-size: 12px;
+  float: right;
 }
