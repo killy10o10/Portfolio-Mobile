@@ -222,5 +222,7 @@ header {
   padding: 12px;
   font-weight: 600;
   font-size: 12px;
-  float: right;
+  float: left;
+  margin: auto 23px auto 23px;
+  list-style: None;
 }
