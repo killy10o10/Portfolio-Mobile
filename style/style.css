@@ -223,36 +223,34 @@ header {
   font-size: 12px;
 }
 
-#forms-section{
+#forms-section {
   padding: 24px;
   display: flex;
   flex-direction: column;
 }
 
-#form{
+#form {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 330px;
-  }
+}
 
 #form input,
- textarea{
+textarea {
   padding: 15px 16px;
   height: 48px;
   border-radius: 4px;
-  border: 1px solid #D0D9D4
+  border: 1px solid #d0d9d4;
 }
 
-#form textarea{
+#form textarea {
   height: 114px;
-  border: 1px solid #60C095;
+  border: 1px solid #60c095;
 }
 
-#forms-section p{
+#forms-section p {
   font-size: 20px;
   text-align: center;
 }
-
-
