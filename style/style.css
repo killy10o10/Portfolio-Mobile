@@ -222,8 +222,22 @@ header {
   font-weight: 600;
   font-size: 12px;
 }
-/* 
-#form-section p {
-  font-weight: 700;
-  font-size: 40px;
-} */
+
+#forms-section{
+  padding: 24px;
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  }
+
+#form input,
+ textarea{
+  padding: 10px;
+
+}
+
+
