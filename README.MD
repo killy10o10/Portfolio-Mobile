@@ -2,7 +2,7 @@
 
 # Portfolio Project
 
-![Screenshot](projects-about-section.png)
+![Screenshot](final-screenshot.png)
 
 > Simple Portfolio project to showcase some of my works as a software developer.
 
