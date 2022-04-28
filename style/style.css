@@ -145,7 +145,7 @@ header {
 }
 
 .button {
-  background: #36b37f;
+  background-color: #c5e9da;
   border-radius: 4px;
   border: none;
   padding: 12px;
@@ -158,9 +158,15 @@ header {
   transition: all 0.5s ease-out;
 }
 
-.button:active {
-  background: #008552;
+.button:hover {
+  background-color: #36b37f;
+
 }
+
+.button:active {
+  background-color: #008552;
+}
+
 
 /* About Me Section */
 #about {
