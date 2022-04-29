@@ -23,6 +23,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+
   /* margin-top: 10px; */
 }
 
@@ -43,7 +44,7 @@ header {
   font-size: 20px;
 }
 
-#menu{
+#menu {
   display: none;
 }
 
@@ -61,6 +62,7 @@ header {
   display: flex;
   align-self: center;
   flex-direction: column;
+
   /* margin: 58px 0; */
 }
 
@@ -252,6 +254,7 @@ textarea {
   height: 48px;
   border-radius: 4px;
   border: 1px solid #d0d9d4;
+  outline: none;
 }
 
 #form textarea {
@@ -264,30 +267,29 @@ textarea {
   text-align: center;
 }
 
+footer {
+  display: none;
+}
 
-/* Media Queries */
-
-
-
-
+/* Desktop verision Media Queries */
 @media only screen and (min-device-width: 768px) {
-
-  header{
+  header {
     position: absolute;
     align-self: center;
     height: 72px;
   }
 
-  #logo, #hamburger-menu{
+  #logo,
+  #hamburger-menu {
     display: none;
   }
 
-   #menu{
+  #menu {
     display: flex;
     width: 300px;
-  } 
+  }
 
-  #menu-list{
+  #menu-list {
     display: flex;
     width: 100%;
     font-weight: 600;
@@ -295,36 +297,98 @@ textarea {
     list-style: none;
   }
 
-  #intro{
+  /* Headline Section Desktop */
+  #intro {
     padding-top: 160px;
   }
 
-  #intro h1{
-    padding: 40px 0px 10px 0px;
+  #intro h1 {
+    padding: 40px 0 10px 0;
   }
 
-  .heading h4 br{
+  .heading h4 br {
     display: none;
   }
 
-
-  #headline{
+  #headline {
     background-image: url(../resource/Header-llustration-desktop.svg);
     background-size: cover;
     background-position: center;
     padding: auto;
-    height: 1125px; 
+    height: 1125px;
   }
 
-  #headline-description{
-   max-width: 920px;
-   padding-top: 20px;
+  #headline-description {
+    max-width: 920px;
+    padding-top: 20px;
   }
+
+  /* Projects Section */
 
   #projects {
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: auto;
   }
 
+  /* About Section Desktop  */
 
+  #about {
+    background-image: url(../resource/illustration\ about\ me\ desktop.svg);
+    background-position: top;
+    background-size: 105%;
+  }
+
+  #about .heading {
+    margin-top: 192px;
+  }
+
+  #about-text {
+    max-width: 920px;
+  }
+
+  #tools {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  /* Forms Section Desktop */
+
+  #forms-section p,
+  #forms-section ul {
+    display: none;
+  }
+
+  #forms-section {
+    display: grid;
+    background-image: url(../resource/forms-section-bg.svg);
+    background-repeat: no-repeat;
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+    grid-template-columns: 463px 550px;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+  }
+
+  #form button {
+    align-self: flex-start;
+  }
+
+  #outro {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: justify;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    border-top: 1px #dfe1e6 solid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .social-handles {
+    margin: 20px;
+  }
 }
