@@ -151,7 +151,6 @@ header {
   padding: 8px 12px;
   font-weight: 600;
   font-size: 12px;
- 
 }
 
 .button {
@@ -220,13 +219,12 @@ header {
   font-weight: 600;
 }
 
-
-.languages .flex-list{
+.languages .flex-list {
   margin-top: 70px;
-  padding: 0px 20px 0px;
+  padding: 0 20px 0;
 }
 
-.languages .flex-list li{
+.languages .flex-list li {
   color: #36b37e;
   background: white;
   border-radius: 8px;
@@ -362,10 +360,10 @@ footer {
     justify-content: center;
     align-items: center;
     grid-gap: 20px;
-    background: url(../resource/Desktop\ -\ 4.svg) no-repeat center; 
+    background: url(../resource/Desktop\ -\ 4.svg) no-repeat center;
     padding-bottom: 280px;
     padding-top: 100px;
-    background-size:cover;
+    background-size: cover;
   }
 
   #form button {
