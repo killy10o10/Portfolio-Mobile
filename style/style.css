@@ -23,8 +23,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-
-  /* margin-top: 10px; */
 }
 
 .dark-blue {
@@ -62,8 +60,6 @@ header {
   display: flex;
   align-self: center;
   flex-direction: column;
-
-  /* margin: 58px 0; */
 }
 
 .heading {
@@ -140,10 +136,12 @@ header {
 }
 
 .flex-list {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
   list-style: none;
   align-items: center;
+  text-align: center;
   margin: 16px 0 29px 0;
 }
 
@@ -153,6 +151,7 @@ header {
   padding: 8px 12px;
   font-weight: 600;
   font-size: 12px;
+ 
 }
 
 .button {
@@ -203,7 +202,7 @@ header {
 
 .languages {
   min-height: 327px;
-  min-width: 331px;
+  min-width: 352px;
   background-color: #ebf0ee;
   display: flex;
   flex-direction: column;
@@ -221,17 +220,17 @@ header {
   font-weight: 600;
 }
 
-.languages ul {
+
+.languages .flex-list{
   margin-top: 70px;
+  padding: 0px 20px 0px;
 }
 
-.languages ul li {
+.languages .flex-list li{
   color: #36b37e;
   background: white;
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 12px;
-  font-weight: 600;
-  font-size: 12px;
 }
 
 #forms-section {
@@ -359,15 +358,14 @@ footer {
 
   #forms-section {
     display: grid;
-    background-image: url(../resource/forms-section-bg.svg);
-    background-repeat: no-repeat;
-    height: 900px;
-    background-size: cover;
-    background-position: center;
     grid-template-columns: 463px 550px;
     justify-content: center;
     align-items: center;
     grid-gap: 20px;
+    background: url(../resource/Desktop\ -\ 4.svg) no-repeat center; 
+    padding-bottom: 280px;
+    padding-top: 100px;
+    background-size:cover;
   }
 
   #form button {
