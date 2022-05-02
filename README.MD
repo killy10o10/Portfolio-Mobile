@@ -3,6 +3,11 @@
 # Portfolio Project
 
 ![Screenshot](final-desktop-screenshot.png)
+![Screenshot](final-screenshot.png)
+
+## Live Demo
+
+[Live Demo Link](https://killy10o10.github.io/Portfolio-Mobile/)
 
 > Simple Portfolio project to showcase some of my works as a software developer.
 
