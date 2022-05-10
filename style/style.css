@@ -14,12 +14,17 @@ body {
   flex-direction: column;
 }
 
+ul{
+  list-style: none;
+}
+
 a {
   color: inherit;
 }
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -38,12 +43,27 @@ header {
   font-size: 20px;
 }
 
-#hamburger-menu {
+#hamburger {
   font-size: 20px;
 }
 
 #menu {
   display: none;
+}
+
+#menu.show{
+  display: block;
+}
+
+#menu{
+  width: 100%;
+ text-align: left;
+}
+
+#menu ul li{
+  font-size: 32px;
+  font-weight: 600;
+  padding: 10px;
 }
 
 #headline {
@@ -277,7 +297,7 @@ footer {
   }
 
   #logo,
-  #hamburger-menu {
+  #hamburger {
     display: none;
   }
 
