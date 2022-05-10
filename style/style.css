@@ -162,6 +162,11 @@ header {
   width: 100%;
   border-radius: 8px 8px 0 0;
   background: #ebf0ee;
+  transition: all 1s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
 }
 
 .work-info {
