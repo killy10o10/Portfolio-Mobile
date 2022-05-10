@@ -14,15 +14,35 @@ body {
   flex-direction: column;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   color: inherit;
 }
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+}
+
+.flex-list li {
+  background: #ebf0ee;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.languages .flex-list li {
+  color: #36b37e;
+  background: white;
+  border-radius: 8px;
+  padding: 12px;
 }
 
 .dark-blue {
@@ -38,12 +58,38 @@ header {
   font-size: 20px;
 }
 
-#hamburger-menu {
+#hamburger {
   font-size: 20px;
+  z-index: 10;
 }
 
 #menu {
   display: none;
+}
+
+#menu.show {
+  display: block;
+  background: white;
+  width: 100%;
+  text-align: left;
+  padding-top: 40px;
+  padding-left: 20px;
+  position: absolute;
+  top: 0;
+  height: 90vh;
+  box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
+  left: 0;
+  border-radius: 0 0 50px 50px;
+}
+
+.big-icon {
+  font-size: 30px;
+}
+
+#menu ul li {
+  font-size: 32px;
+  font-weight: 600;
+  padding: 10px;
 }
 
 #headline {
@@ -116,6 +162,11 @@ header {
   width: 100%;
   border-radius: 8px 8px 0 0;
   background: #ebf0ee;
+  transition: all 1s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
 }
 
 .work-info {
@@ -143,14 +194,6 @@ header {
   align-items: center;
   text-align: center;
   margin: 16px 0 29px 0;
-}
-
-.flex-list li {
-  background: #ebf0ee;
-  border-radius: 4px;
-  padding: 8px 12px;
-  font-weight: 600;
-  font-size: 12px;
 }
 
 .button {
@@ -224,13 +267,6 @@ header {
   padding: 0 20px 0;
 }
 
-.languages .flex-list li {
-  color: #36b37e;
-  background: white;
-  border-radius: 8px;
-  padding: 12px;
-}
-
 #forms-section {
   padding: 24px;
   display: flex;
@@ -277,7 +313,7 @@ footer {
   }
 
   #logo,
-  #hamburger-menu {
+  #hamburger {
     display: none;
   }
 
@@ -292,6 +328,11 @@ footer {
     font-weight: 600;
     justify-content: space-between;
     list-style: none;
+  }
+
+  #menu ul li {
+    font-size: 15px;
+    padding: 0;
   }
 
   /* Headline Section Desktop */
