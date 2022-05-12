@@ -4,6 +4,7 @@
 
 ![Screenshot](final-desktop-screenshot.png)
 ![Screenshot](final-screenshot.png)
+![Screenshot](project-info.png)
 
 ## Live Demo
 

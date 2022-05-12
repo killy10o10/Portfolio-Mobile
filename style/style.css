@@ -161,6 +161,8 @@ header {
   flex-direction: column;
   border-radius: 8px;
   border: 1px solid #d0d9d4;
+  border-top: none;
+  max-width: 369px;
 }
 
 .thumbnail {
@@ -168,25 +170,21 @@ header {
   width: 100%;
   border-radius: 8px;
   background: #ebf0ee;
-  transition: all 1s;
 }
 
-.thumbnail:hover {
-  transform: scale(1.1);
-}
 
 /* ====Project Info Card */
-.project-card-desktop-bg {
-  display: none;
-}
 
 .project-card-bg {
-  width: 375px;
-  height: 882px;
+  width: 100%;
+  height: fit-content;
   background: #c1c7d0;
-  mix-blend-mode: multiply;
   padding: 20px;
   display: grid;
+  position: absolute;
+  overscroll-behavior: contain;
+  z-index: 100;
+  left: 0;
 }
 
 .project-card {
@@ -195,23 +193,33 @@ header {
   border-radius: 16px;
   background: white;
   align-self: center;
-}
-
-.project-thumbnail {
   position: relative;
+  min-height: 855px;
 }
 
-.project-thumbnail img {
+.thumbnail img {
   width: 100%;
   height: 100%;
+  transition: all 1s;
 }
 
-.project-thumbnail i {
+.languages img {
+  align-self: center;
+  margin-top: 40px;
+}
+
+.thumbnail img:hover {
+  transform: scale(1.1);
+}
+
+.close-project {
   font-size: 25px;
-  color: white;
+  color: #67798e;
   position: absolute;
-  left: 90%;
-  top: 5%;
+  left: 87%;
+  top: 4%;
+  background: transparent;
+  border: none;
 }
 
 .project-card-heading {
@@ -235,6 +243,10 @@ header {
   justify-content: center;
   align-items: center;
   white-space: nowrap;
+  position: absolute;
+  top: 93%;
+  left: 10%;
+  right: 10%;
 }
 
 .project-button {
@@ -324,11 +336,6 @@ header {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-}
-
-.languages img {
-  align-self: center;
-  margin-top: 40px;
 }
 
 .languages h4 {
@@ -447,6 +454,8 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 24px;
+    max-width: 920px;
+    max-height: 1083px;
   }
 
   .close-project {
@@ -455,28 +464,42 @@ footer {
     align-items: center;
     border: none;
     padding: 5px 10px;
-    margin-bottom: 14px;
     border-radius: 8px;
     color: #67798e;
     font-size: 20px;
+    top: 2%;
+    left: 93%;
+  }
+
+  .project-thumbnail {
+    padding-top: 50px;
   }
 
   .heading-tools {
     margin-top: 10px;
   }
 
-  .project-card-desktop-bg {
+  .project-card-bg {
     display: grid;
-    width: 1440px;
+    width: 100%;
+    height: 100vh;
     background: rgba(193, 199, 208, 0.5);
     backdrop-filter: blur(8px);
     padding: 122px 260px 260px;
+    position: fixed;
+    overflow: auto;
+    z-index: 100;
+    top: 0;
   }
 
   .project-info {
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
+  }
+
+  .project-buttons {
+    position: inherit;
   }
 
   .project-button {
