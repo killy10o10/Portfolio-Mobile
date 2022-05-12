@@ -89,7 +89,7 @@ const cardModal = projects.map((card) => ` <div class="project-card-bg">
       <p class="project-description">${card.description}</p>
     </div>
   </div>`);
-
+// check for Each button and show its relative Modal
 buttons.forEach((button) => {
   if (button.id === 'button-1') {
     button.addEventListener('click', () => {
