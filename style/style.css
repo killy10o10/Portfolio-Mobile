@@ -38,6 +38,12 @@ header {
   font-size: 12px;
 }
 
+.heading-tools ul li {
+  background: #ebecf0;
+  border-radius: 8px;
+  padding: 12px;
+}
+
 .languages .flex-list li {
   color: #36b37e;
   background: white;
@@ -170,6 +176,10 @@ header {
 }
 
 /* ====Project Info Card */
+.project-card-desktop-bg {
+  display: none;
+}
+
 .project-card-bg {
   width: 375px;
   height: 882px;
@@ -223,6 +233,7 @@ header {
   display: flex;
   gap: 12px;
   justify-content: center;
+  align-items: center;
   white-space: nowrap;
 }
 
@@ -230,7 +241,7 @@ header {
   gap: 16px;
 }
 
-/* ====Project Info Card */
+/* ====Project Info Card end==== */
 
 .work-info {
   display: flex;
@@ -430,6 +441,51 @@ footer {
   #projects {
     grid-template-columns: repeat(3, auto);
   }
+
+  /* ====Projects Info Desktop==== */
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .close-project {
+    align-self: flex-end;
+    background: #ebecf0;
+    align-items: center;
+    border: none;
+    padding: 5px 10px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    color: #67798e;
+    font-size: 20px;
+  }
+
+  .heading-tools {
+    margin-top: 10px;
+  }
+
+  .project-card-desktop-bg {
+    display: grid;
+    width: 1440px;
+    background: rgba(193, 199, 208, 0.5);
+    backdrop-filter: blur(8px);
+    padding: 122px 260px 260px;
+  }
+
+  .project-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+
+  .project-button {
+    align-self: flex-start;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+
+  /* ====Projects Info Desktop end==== */
 
   /* About Section Desktop  */
 
