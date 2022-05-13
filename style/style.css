@@ -177,15 +177,16 @@ header {
 
 .project-card-bg {
   width: 100%;
-  height: fit-content;
+  height: 100vh;
   background: #c1c7d0;
   padding: 20px;
   display: grid;
-  position: absolute;
+  position: fixed;
   overscroll-behavior: contain;
   overflow: auto;
   z-index: 100;
   left: 0;
+  top: 0;
 }
 
 .project-card {
@@ -196,6 +197,7 @@ header {
   align-self: center;
   position: relative;
   min-height: 855px;
+  margin: auto;
 }
 
 .thumbnail img {
@@ -494,7 +496,7 @@ footer {
     height: 100vh;
     background: rgba(193, 199, 208, 0.5);
     backdrop-filter: blur(8px);
-    padding: 122px 260px 260px;
+    padding: 122px 0 260px 0;
     position: fixed;
     overflow: auto;
     z-index: 100;
