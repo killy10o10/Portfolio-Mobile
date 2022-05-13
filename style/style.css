@@ -183,6 +183,7 @@ header {
   display: grid;
   position: absolute;
   overscroll-behavior: contain;
+  overflow: auto;
   z-index: 100;
   left: 0;
 }
@@ -203,6 +204,11 @@ header {
   transition: all 1s;
 }
 
+.project-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
 .languages img {
   align-self: center;
   margin-top: 40px;
@@ -220,6 +226,8 @@ header {
   top: 4%;
   background: transparent;
   border: none;
+
+  /* cursor: pointer; */
 }
 
 .project-card-heading {
@@ -469,6 +477,8 @@ footer {
     font-size: 20px;
     top: 2%;
     left: 93%;
+
+    /* cursor: pointer; */
   }
 
   .project-thumbnail {
@@ -480,7 +490,6 @@ footer {
   }
 
   .project-card-bg {
-    display: grid;
     width: 100%;
     height: 100vh;
     background: rgba(193, 199, 208, 0.5);

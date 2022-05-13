@@ -60,13 +60,15 @@ const projects = [
 
   },
 ];
-
+// Project Section Template string
 const projectSection = document.querySelector('#projects');
 const buttons = Array.from(document.querySelectorAll('.modal-button'));
 
+// Modal Template String
+
 const cardModal = projects.map((card) => ` <div class="project-card-bg">
     <div class="project-card">
-      <button type="button" class="close-project"><i class="fa-solid fa-xmark"></i></button>
+      <button type="button" class="close-project" onclick="closeProject()"><i class="fa-solid fa-xmark"></i></button>
       <div class="project-thumbnail">
         <img src="${card.image}" alt="">
       </div>
@@ -88,7 +90,9 @@ const cardModal = projects.map((card) => ` <div class="project-card-bg">
       </div>
       <p class="project-description">${card.description}</p>
     </div>
-  </div>`);
+  </div>
+  `);
+
 // check for Each button and show its relative Modal
 buttons.forEach((button) => {
   if (button.id === 'button-1') {
@@ -117,3 +121,11 @@ buttons.forEach((button) => {
     });
   }
 });
+
+function closeProject() {
+  const modalContainer = document.querySelector('div.project-card-bg');
+  // modalContainer.remove();
+  console.log(`Wale too good${buttons.length}`);
+}
+
+closeProject();
