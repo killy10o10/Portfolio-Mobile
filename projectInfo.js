@@ -140,6 +140,8 @@ for (let i = 0; i < buttons.length; i += 1) {
 // ===Form Validation ===//
 const form = document.querySelector('#form');
 const email = document.querySelector('#email');
+const userName = document.querySelector('#name');
+const message = document.querySelector('#text');
 const errorMessage = document.querySelector('#errorMessage');
 
 form.addEventListener('submit', (event) => {
@@ -148,3 +150,25 @@ form.addEventListener('submit', (event) => {
     errorMessage.classList.toggle('turn-on');
   }
 });
+// ===Local Storage ===
+function localStorageData() {
+  form.addEventListener('input', () => {
+    const userData = {
+      user_name: userName.value,
+      user_email: email.value,
+      user_message: message.value,
+    };
+    localStorage.setItem('userData', JSON.stringify(userData));
+  });
+}
+
+localStorageData();
+
+function getLocalStorage() {
+  const getData = JSON.parse(localStorage.getItem('userData'));
+  userName.value = getData.user_name;
+  email.value = getData.user_email;
+  message.value = getData.user_message;
+}
+
+getLocalStorage();
