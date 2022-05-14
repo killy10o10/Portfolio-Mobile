@@ -90,7 +90,7 @@ projectSection.innerHTML = projectCards;
 //= == Modal Template String===//
 const cardModal = projects.map((card) => ` <div class="project-card-bg">
     <div class="project-card">
-      <button type="button" class="close-project" onclick="closeProject()"><i class="fa-solid fa-xmark"></i></button>
+      <button type="button" class="close-project"><i class="fa-solid fa-xmark"></i></button>
       <div class="project-thumbnail">
         <img src="${card.image}" alt="">
       </div>
@@ -112,43 +112,35 @@ const cardModal = projects.map((card) => ` <div class="project-card-bg">
       </div>
       <p class="project-description">${card.description}</p>
     </div>
-  </div>
-  `);
+  </div>)`);
 
 //= ==check for Each button and show its relative Modal===//
+
 const buttons = Array.from(document.querySelectorAll('.modal-button'));
-buttons.forEach((button) => {
-  if (button.id === 'button-1') {
-    button.addEventListener('click', () => {
-      projectSection.innerHTML += cardModal[0];
+
+// function buttonCheck(buttonNum) {
+for (let i = 0; i < buttons.length; i += 1) {
+  if (i % 2 === 0) {
+    buttons[i].addEventListener('click', () => {
+      projectSection.innerHTML += cardModal[i];
+      console.log('Killy');
     });
-  } else if (button.id === 'button-2') {
-    button.addEventListener('click', () => {
-      projectSection.innerHTML += cardModal[1];
-    });
-  } else if (button.id === 'button-3') {
-    button.addEventListener('click', () => {
-      projectSection.innerHTML += cardModal[2];
-    });
-  } else if (button.id === 'button-4') {
-    button.addEventListener('click', () => {
-      projectSection.innerHTML += cardModal[3];
-    });
-  } else if (button.id === 'button-5') {
-    button.addEventListener('click', () => {
-      projectSection.innerHTML += cardModal[4];
-    });
-  } else if (button.id === 'button-6') {
-    button.addEventListener('click', () => {
-      projectSection.innerHTML += cardModal[5];
+  } else {
+    buttons[i].addEventListener('click', () => {
+      projectSection.innerHTML += cardModal[i];
+      console.log('odd');
     });
   }
-});
-
-function closeProject() {
-  const modalContainer = document.querySelector('div.project-card-bg');
-  // modalContainer.remove();
-  console.log(`Wale too good${buttons.length}`);
 }
 
-closeProject();
+// ===Form Validation ===//
+const form = document.querySelector('#form');
+const email = document.querySelector('#email');
+const errorMessage = document.querySelector('#errorMessage');
+
+form.addEventListener('submit', (event) => {
+  if (email.value !== email.value.toLowerCase()) {
+    event.preventDefault();
+    errorMessage.classList.toggle('turn-on');
+  }
+});
