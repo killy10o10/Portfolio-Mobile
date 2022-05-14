@@ -22,9 +22,20 @@
 
 👤 **Okine Kingsley**
 
-- GitHub: [@githubhandle](https://github.com/killy10o10)
-- Twitter: [@twitterhandle](https://twitter.com/Quami_Killy)
-- Instagram: [Instagram](https://www.instagram.com/quami_killy/)
+- GitHub: [@killy10o10](https://github.com/killy10o10)
+- Twitter: [@Quami_Killy](https://twitter.com/Quami_Killy)
+- Instagram: [quami_killy](https://www.instagram.com/quami_killy/)
+
+## Collaborators
+
+👤 **Favour Ezeugwa**
+
+- GitHub: [@favourezeugwa](https://github.com/Favourezeugwa)
+- Instagram: [ama_ez](https://www.instagram.com/ama_ez/)
+
+👤 **Farida Hamid**
+
+- GitHub: [@Farida-Hamid](https://github.com/Farida-Hamid)
 
 ## 🤝 Contributing
 
