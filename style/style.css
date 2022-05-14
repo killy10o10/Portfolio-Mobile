@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #172b4d;
   display: flex;
   flex-direction: column;
@@ -172,19 +172,20 @@ header {
   background: #ebf0ee;
 }
 
-
 /* ====Project Info Card */
-
 .project-card-bg {
   width: 100%;
-  height: fit-content;
+  height: 100vh;
   background: #c1c7d0;
   padding: 20px;
   display: grid;
-  position: absolute;
+  position: fixed;
   overscroll-behavior: contain;
+  overflow: auto;
   z-index: 100;
   left: 0;
+  top: 0;
+  animation: ease-in-out 1s;
 }
 
 .project-card {
@@ -195,12 +196,18 @@ header {
   align-self: center;
   position: relative;
   min-height: 855px;
+  margin: auto;
 }
 
 .thumbnail img {
   width: 100%;
   height: 100%;
   transition: all 1s;
+}
+
+.project-thumbnail img {
+  width: 100%;
+  height: 100%;
 }
 
 .languages img {
@@ -220,6 +227,7 @@ header {
   top: 4%;
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .project-card-heading {
@@ -294,6 +302,11 @@ header {
   cursor: pointer;
   align-self: center;
   display: flex;
+}
+
+.button:hover{
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transition: ease-in-out;
 }
 
 .button:active {
@@ -377,8 +390,21 @@ textarea {
   border: 1px solid #60c095;
 }
 
-#forms-section p {
+#myEmail {
   font-size: 20px;
+  text-align: center;
+}
+
+.turn-off {
+  display: none;
+}
+
+.turn-on {
+  display: block;
+  color: red;
+  font-size: 10px;
+  font-weight: 700;
+  font-style: italic;
   text-align: center;
 }
 
@@ -469,6 +495,8 @@ footer {
     font-size: 20px;
     top: 2%;
     left: 93%;
+
+    /* cursor: pointer; */
   }
 
   .project-thumbnail {
@@ -480,12 +508,11 @@ footer {
   }
 
   .project-card-bg {
-    display: grid;
     width: 100%;
     height: 100vh;
     background: rgba(193, 199, 208, 0.5);
     backdrop-filter: blur(8px);
-    padding: 122px 260px 260px;
+    padding: 122px 0 260px 0;
     position: fixed;
     overflow: auto;
     z-index: 100;
@@ -533,7 +560,7 @@ footer {
 
   /* Forms Section Desktop */
 
-  #forms-section p,
+  #myEmail,
   #forms-section ul {
     display: none;
   }
@@ -552,6 +579,10 @@ footer {
 
   #form button {
     align-self: flex-start;
+  }
+
+  .turn-on {
+    font-size: 15px;
   }
 
   #outro {

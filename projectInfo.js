@@ -7,6 +7,7 @@ const projects = [
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     liveVersion: 'https://killy10o10.github.io/Portfolio-Mobile/',
     sourceLink: 'https://github.com/killy10o10/Portfolio-Mobile',
+    buttonID: 'button-1',
 
   },
   //= == Card 2===//
@@ -17,6 +18,7 @@ const projects = [
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     liveVersion: 'https://killy10o10.github.io/Portfolio-Mobile/',
     sourceLink: 'https://github.com/killy10o10/Portfolio-Mobile',
+    buttonID: 'button-2',
 
   },
   //= == Card 3===//
@@ -27,6 +29,7 @@ const projects = [
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     liveVersion: 'https://killy10o10.github.io/Portfolio-Mobile/',
     sourceLink: 'https://github.com/killy10o10/Portfolio-Mobile',
+    buttonID: 'button-3',
 
   },
   //= == Card 4===//
@@ -37,6 +40,7 @@ const projects = [
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     liveVersion: 'https://killy10o10.github.io/Portfolio-Mobile/',
     sourceLink: 'https://github.com/killy10o10/Portfolio-Mobile',
+    buttonID: 'button-4',
 
   },
   //= == Card 5===//
@@ -47,6 +51,7 @@ const projects = [
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     liveVersion: 'https://killy10o10.github.io/Portfolio-Mobile/',
     sourceLink: 'https://github.com/killy10o10/Portfolio-Mobile',
+    buttonID: 'button-5',
 
   },
   //= == Card 6===//
@@ -57,16 +62,35 @@ const projects = [
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     liveVersion: 'https://killy10o10.github.io/Portfolio-Mobile/',
     sourceLink: 'https://github.com/killy10o10/Portfolio-Mobile',
+    buttonID: 'button-6',
 
   },
 ];
 
+//= ==Generating cards in projects section dynamically===//
 const projectSection = document.querySelector('#projects');
-const buttons = Array.from(document.querySelectorAll('.modal-button'));
+const projectCards = projects.map((project) => `<div class="works">
+<div class="thumbnail">
+  <img src="${project.image}" alt="">
+</div>
+<div class="work-info">
+  <h4 class="heading-2">Multi-Post Stories Gain+Glory</h4>
+  <ul class="flex-list">
+    <li>Ruby on rails</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>HTML</li>
+  </ul>
+  <button type="button" class="button modal-button" id="${project.buttonID}">See Project</button>
+</div>
+</div>`).join('');
+projectSection.innerHTML += projectCards;
+//= ==Generating cards in projects section dynamically End===//
 
+//= == Modal Template String===//
 const cardModal = projects.map((card) => ` <div class="project-card-bg">
     <div class="project-card">
-      <button type="button" class="close-project"><i class="fa-solid fa-xmark"></i></button>
+      <button type="button" class="close-project" onclick="closeProject()"><i class="fa-solid fa-xmark"></i></button>
       <div class="project-thumbnail">
         <img src="${card.image}" alt="">
       </div>
@@ -89,31 +113,38 @@ const cardModal = projects.map((card) => ` <div class="project-card-bg">
       <p class="project-description">${card.description}</p>
     </div>
   </div>`);
-// check for Each button and show its relative Modal
-buttons.forEach((button) => {
-  if (button.id === 'button-1') {
-    button.addEventListener('click', () => {
-      projectSection.innerHTML += cardModal[0];
+
+//= ==check for Each button and show its relative Modal===//
+
+const buttons = Array.from(document.querySelectorAll('.modal-button'));
+const modalDiv = document.querySelector('.modal-div');
+
+// eslint-disable-next-line no-unused-vars
+function closeProject() {
+  const modalContainer = document.querySelector('.project-card-bg');
+  modalContainer.remove();
+}
+
+for (let i = 0; i < buttons.length; i += 1) {
+  if (i % 2 === 0) {
+    buttons[i].addEventListener('click', () => {
+      modalDiv.innerHTML += cardModal[i];
     });
-  } else if (button.id === 'button-2') {
-    button.addEventListener('click', () => {
-      projectSection.innerHTML += cardModal[1];
+  } else {
+    buttons[i].addEventListener('click', () => {
+      modalDiv.innerHTML += cardModal[i];
     });
-  } else if (button.id === 'button-3') {
-    button.addEventListener('click', () => {
-      projectSection.innerHTML += cardModal[2];
-    });
-  } else if (button.id === 'button-4') {
-    button.addEventListener('click', () => {
-      projectSection.innerHTML += cardModal[3];
-    });
-  } else if (button.id === 'button-5') {
-    button.addEventListener('click', () => {
-      projectSection.innerHTML += cardModal[4];
-    });
-  } else if (button.id === 'button-6') {
-    button.addEventListener('click', () => {
-      projectSection.innerHTML += cardModal[5];
-    });
+  }
+}
+
+// ===Form Validation ===//
+const form = document.querySelector('#form');
+const email = document.querySelector('#email');
+const errorMessage = document.querySelector('#errorMessage');
+
+form.addEventListener('submit', (event) => {
+  if (email.value !== email.value.toLowerCase()) {
+    event.preventDefault();
+    errorMessage.classList.toggle('turn-on');
   }
 });

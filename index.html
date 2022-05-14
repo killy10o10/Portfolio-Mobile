@@ -70,116 +70,24 @@
       </ul>
       <div class="arrow"><a href="#projects"><img src="./resource/Disabled.svg" alt="" /></a></div>
     </section>
-    <!-- Projects Section -->
+    <!-- Projects Section Intro-->
     <div class="heading">
       <h4>My Recent <br> Works</h4>
       <img src="./resource/Indicator.png" alt="">
     </div>
+    <!-- Projects Section-->
     <section id="projects">
-      <!-- Card One -->
-      <div class="works">
-        <div class="thumbnail">
-          <img src="./resource/project-thumbnail-desktop.svg" alt="">
-        </div>
-        <div class="work-info">
-          <h4 class="heading-2">Multi-Post Stories Gain+Glory</h4>
-          <ul class="flex-list">
-            <li>Ruby on rails</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-          </ul>
-          <button type="button" class="button modal-button" id="button-1">See Project</button>
-        </div>
-      </div>
-      <!-- Card Two -->
-      <div class="works">
-        <div class="thumbnail">
-          <img src="./resource/project-info-thumbnail.svg" alt="">
-        </div>
-        <div class="work-info">
-          <h4 class="heading-2">Multi-Post Stories Gain+Glory</h4>
-          <ul class="flex-list">
-            <li>Ruby on rails</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-          </ul>
-          <button type="button" class="button modal-button" id="button-2">See Project</button>
-        </div>
-      </div>
-      <!-- Card Three -->
-      <div class="works">
-        <div class="thumbnail">
-          <img src="./resource/project-thumbnail-desktop.svg" alt="">
-        </div>
-        <div class="work-info">
-          <h4 class="heading-2">Multi-Post Stories Gain+Glory</h4>
-          <ul class="flex-list">
-            <li>Ruby on rails</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-          </ul>
-          <button type="button" class="button modal-button" id="button-3">See Project</button>
-        </div>
-      </div>
-      <!-- Card Four -->
-      <div class="works">
-        <div class="thumbnail">
-          <img src="./resource/project-info-thumbnail.svg" alt="">
-        </div>
-        <div class="work-info">
-          <h4 class="heading-2">Multi-Post Stories Gain+Glory</h4>
-          <ul class="flex-list">
-            <li>Ruby on rails</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-          </ul>
-          <button type="button" class="button modal-button" id="button-4">See Project</button>
-        </div>
-      </div>
-      <!-- Card Five -->
-      <div class="works">
-        <div class="thumbnail">
-          <img src="./resource/project-thumbnail-desktop.svg" alt="">
-        </div>
-        <div class="work-info">
-          <h4 class="heading-2">Multi-Post Stories Gain+Glory</h4>
-          <ul class="flex-list">
-            <li>Ruby on rails</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-          </ul>
-          <button type="button" class="button modal-button" id="button-5">See Project</button>
-        </div>
-      </div>
-      <!-- Card Six -->
-      <div class="works">
-        <div class="thumbnail">
-          <img src="./resource/project-info-thumbnail.svg" alt="">
-        </div>
-        <div class="work-info">
-          <h4 class="heading-2">Multi-Post Stories Gain+Glory</h4>
-          <ul class="flex-list">
-            <li>Ruby on rails</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-          </ul>
-          <button type="button" class="button modal-button" id="button-6">See Project</button>
-        </div>
-      </div>
+      <!-- Contents here are generated Dynamically -->
+
     </section>
+    <div class="modal-div"></div>
     <!-- About Section -->
     <section id="about">
       <h4 class="heading">About Me</h4>
       <div id="about-text">
         <p> I can help you build a product , feature or website Look through some of my work and experience! If you like
           what you see and have a project you need coded, <br>
-          don’t hestiate to contact me.</p>
+          don't hestiate to contact me.</p>
       </div>
       <button type="button" class="button">Get My Resume</button>
       <div id="tools">
@@ -226,12 +134,10 @@
         please get in
         touch.</h4>
       <form id="form" action="https://formspree.io/f/mbjwpoll" method="post">
-        <label for="name"></label>
         <input id="name" type="text" name="name" maxlength="30" placeholder="Full Name" required>
-        <label for="email"></label>
         <input id="email" name="email" type="email" placeholder="Email Address" required>
-        <label for="text"></label>
         <textarea id="text" name="message" maxlength="500" placeholder="Enter text here" required></textarea>
+        <p id="errorMessage" class="turn-off">Please enter email in lowercase</p>
         <button class="button" type="submit">Get in touch</button>
       </form>
       <ul class="social-handles">
@@ -257,7 +163,7 @@
 
         </li>
       </ul>
-      <p>killynelly@gmail.com</p>
+      <p id="myEmail">killynelly@gmail.com</p>
     </section>
   </main>
   <!-- Footer -->
