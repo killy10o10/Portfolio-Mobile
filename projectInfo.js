@@ -1,4 +1,3 @@
-// Objects For all the Projects
 const projects = [
   //= == Card 1===//
   {
@@ -88,7 +87,7 @@ const projectCards = projects.map((project) => `<div class="works">
 projectSection.innerHTML += projectCards;
 //= ==Generating cards in projects section dynamically End===//
 
-//= == Modal Pop up Template String===//
+//= == Modal Template String===//
 const cardModal = projects.map((card) => ` <div class="project-card-bg">
     <div class="project-card">
       <button type="button" class="close-project" onclick="closeProject()"><i class="fa-solid fa-xmark"></i></button>
@@ -138,7 +137,7 @@ for (let i = 0; i < buttons.length; i += 1) {
   }
 }
 
-// ===Form Validation Code ===//
+// ===Form Validation ===//
 const form = document.querySelector('#form');
 const email = document.querySelector('#email');
 const errorMessage = document.querySelector('#errorMessage');
