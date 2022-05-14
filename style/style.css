@@ -304,7 +304,7 @@ header {
   display: flex;
 }
 
-.button:hover{
+.button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   transition: ease-in-out;
 }
