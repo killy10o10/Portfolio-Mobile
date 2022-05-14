@@ -84,13 +84,13 @@ const projectCards = projects.map((project) => `<div class="works">
   <button type="button" class="button modal-button" id="${project.buttonID}">See Project</button>
 </div>
 </div>`).join('');
-projectSection.innerHTML = projectCards;
+projectSection.innerHTML += projectCards;
 //= ==Generating cards in projects section dynamically End===//
 
 //= == Modal Template String===//
 const cardModal = projects.map((card) => ` <div class="project-card-bg">
     <div class="project-card">
-      <button type="button" class="close-project"><i class="fa-solid fa-xmark"></i></button>
+      <button type="button" class="close-project" onclick="closeProject()"><i class="fa-solid fa-xmark"></i></button>
       <div class="project-thumbnail">
         <img src="${card.image}" alt="">
       </div>
@@ -112,23 +112,27 @@ const cardModal = projects.map((card) => ` <div class="project-card-bg">
       </div>
       <p class="project-description">${card.description}</p>
     </div>
-  </div>)`);
+  </div>`);
 
 //= ==check for Each button and show its relative Modal===//
 
 const buttons = Array.from(document.querySelectorAll('.modal-button'));
+const modalDiv = document.querySelector('.modal-div');
 
 // function buttonCheck(buttonNum) {
+function closeProject() {
+  const modalContainer = document.querySelector('.project-card-bg');
+  modalContainer.remove();
+}
+
 for (let i = 0; i < buttons.length; i += 1) {
   if (i % 2 === 0) {
     buttons[i].addEventListener('click', () => {
-      projectSection.innerHTML += cardModal[i];
-      console.log('Killy');
+      modalDiv.innerHTML += cardModal[i];
     });
   } else {
     buttons[i].addEventListener('click', () => {
-      projectSection.innerHTML += cardModal[i];
-      console.log('odd');
+      modalDiv.innerHTML += cardModal[i];
     });
   }
 }
