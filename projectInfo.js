@@ -119,7 +119,7 @@ const cardModal = projects.map((card) => ` <div class="project-card-bg">
 const buttons = Array.from(document.querySelectorAll('.modal-button'));
 const modalDiv = document.querySelector('.modal-div');
 
-// function buttonCheck(buttonNum) {
+// eslint-disable-next-line no-unused-vars
 function closeProject() {
   const modalContainer = document.querySelector('.project-card-bg');
   modalContainer.remove();
