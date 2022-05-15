@@ -90,7 +90,7 @@ projectSection.innerHTML += projectCards;
 //= == Modal Template String===//
 const cardModal = projects.map((card) => ` <div class="project-card-bg">
     <div class="project-card">
-      <button type="button" class="close-project" onclick="closeProject()"><i class="fa-solid fa-xmark"></i></button>
+      <button type="button" class="close-project"><i class="fa-solid fa-xmark"></i></button>
       <div class="project-thumbnail">
         <img src="${card.image}" alt="">
       </div>
@@ -114,25 +114,28 @@ const cardModal = projects.map((card) => ` <div class="project-card-bg">
     </div>
   </div>`);
 
-//= ==check for Each button and show its relative Modal===//
-
 const buttons = Array.from(document.querySelectorAll('.modal-button'));
 const modalDiv = document.querySelector('.modal-div');
 
-// eslint-disable-next-line no-unused-vars
+// === Function to close Modal (Pop-Up) ===//
 function closeProject() {
+  const closeBtn = document.querySelector('.close-project');
   const modalContainer = document.querySelector('.project-card-bg');
-  modalContainer.remove();
+  closeBtn.addEventListener('click', () => {
+    modalContainer.remove();
+  });
 }
-
+// ===check for Each button and show its relative Modal===//
 for (let i = 0; i < buttons.length; i += 1) {
   if (i % 2 === 0) {
     buttons[i].addEventListener('click', () => {
       modalDiv.innerHTML += cardModal[i];
+      closeProject();
     });
   } else {
     buttons[i].addEventListener('click', () => {
       modalDiv.innerHTML += cardModal[i];
+      closeProject();
     });
   }
 }
