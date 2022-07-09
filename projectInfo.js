@@ -1,62 +1,62 @@
 const projects = [
   //= == Card 1===//
   {
-    image: './resource/project-thumbnail-desktop.svg',
-    title: 'Keeping track of hundreds of components',
-    technologies: ['Ruby on rails', 'CSS', 'JavaScript'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    liveVersion: 'https://killy10o10.github.io/Portfolio-Mobile/',
-    sourceLink: 'https://github.com/killy10o10/Portfolio-Mobile',
+    image: './resource/muvi-webapp.png',
+    title: 'Movie Web App With TMBD API',
+    technologies: ['Webpack', 'Sass', 'JavaScript', 'Jest'],
+    description: 'This project is a web app about Movies, we fetched all data from TMBD API, Users can like movies, search movies and also leave a comment. All data are recorded in the involvement API and also displayed on the screen in real time.',
+    liveVersion: 'https://killy10o10.github.io/Muvi-WebApp/',
+    sourceLink: 'https://github.com/killy10o10/Muvi-WebApp',
     buttonID: 'button-1',
 
   },
   //= == Card 2===//
   {
-    image: './resource/project-info-thumbnail.svg',
-    title: 'Keeping track of hundreds of components',
-    technologies: ['Ruby on rails', 'CSS', 'JavaScript'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    liveVersion: 'https://killy10o10.github.io/Portfolio-Mobile/',
-    sourceLink: 'https://github.com/killy10o10/Portfolio-Mobile',
+    image: './resource/joyful-learning.png',
+    title: 'Joyful Learning International',
+    technologies: ['CSS', 'Sass', 'HTML', 'JavaScript'],
+    description: 'This is a website for kids school. It has different pages for various sections and a responsive layout.',
+    liveVersion: 'https://killy10o10.github.io/HTML-CSS-JavaScript-capstone-project/',
+    sourceLink: 'https://github.com/killy10o10/HTML-CSS-JavaScript-capstone-project',
     buttonID: 'button-2',
 
   },
   //= == Card 3===//
   {
-    image: './resource/project-thumbnail-desktop.svg',
-    title: 'Keeping track of hundreds of components',
-    technologies: ['Ruby on rails', 'CSS', 'JavaScript'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    liveVersion: 'https://killy10o10.github.io/Portfolio-Mobile/',
-    sourceLink: 'https://github.com/killy10o10/Portfolio-Mobile',
+    image: './resource/task-list.png',
+    title: 'Task List App',
+    technologies: ['Sass', 'HTML', 'JavaScript', 'webpack'],
+    description: 'This is a simple HTML /CSS and JavaScript project on list of To Do tasks. This simple web page is built using webpack and served by a webpack dev server',
+    liveVersion: 'https://killy10o10.github.io/task-list/',
+    sourceLink: 'https://github.com/killy10o10/task-list',
     buttonID: 'button-3',
 
   },
   //= == Card 4===//
   {
-    image: './resource/project-info-thumbnail.svg',
-    title: 'Keeping track of hundreds of components',
-    technologies: ['Ruby on rails', 'CSS', 'JavaScript'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    liveVersion: 'https://killy10o10.github.io/Portfolio-Mobile/',
-    sourceLink: 'https://github.com/killy10o10/Portfolio-Mobile',
+    image: './resource/Leaderboard.png',
+    title: 'Leaderboard',
+    technologies: ['API', 'Sass', 'JavaScript', 'webpack'],
+    description: 'Leaderboard is an application that displays scores submitted by different players. It is built with HTML, Sass and JavaScript ES6. Packages used are NPM, webpack and leaderboard API.',
+    liveVersion: 'https://killy10o10.github.io/Leaderboard/',
+    sourceLink: 'https://github.com/killy10o10/Leaderboard',
     buttonID: 'button-4',
 
   },
   //= == Card 5===//
   {
-    image: './resource/project-thumbnail-desktop.svg',
-    title: 'Keeping track of hundreds of components',
-    technologies: ['Ruby on rails', 'CSS', 'JavaScript'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    liveVersion: 'https://killy10o10.github.io/Portfolio-Mobile/',
-    sourceLink: 'https://github.com/killy10o10/Portfolio-Mobile',
+    image: './resource/youtube-player.png',
+    title: 'Youtube Clone',
+    technologies: ['API', 'CSS', 'JavaScript', 'HTML'],
+    description: 'This is a clone of the official youtube page. Videos are fetched using youtube API.',
+    liveVersion: 'https://killy10o10.github.io/youtube-player-microverse/',
+    sourceLink: 'https://github.com/killy10o10/youtube-player-microverse',
     buttonID: 'button-5',
 
   },
   //= == Card 6===//
   {
-    image: './resource/project-info-thumbnail.svg',
+    image: './resource/project-thumbnail-desktop.svg',
     title: 'Keeping track of hundreds of components',
     technologies: ['Ruby on rails', 'CSS', 'JavaScript'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
@@ -74,12 +74,9 @@ const projectCards = projects.map((project) => `<div class="works">
   <img src="${project.image}" alt="">
 </div>
 <div class="work-info">
-  <h4 class="heading-2">Multi-Post Stories Gain+Glory</h4>
+  <h4 class="heading-2">${project.title}</h4>
   <ul class="flex-list">
-    <li>Ruby on rails</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>HTML</li>
+  ${project.technologies.map((technology) => `<li>${technology}</li>`).join('')}
   </ul>
   <button type="button" class="button modal-button" id="${project.buttonID}">See Project</button>
 </div>
@@ -90,7 +87,7 @@ projectSection.innerHTML += projectCards;
 //= == Modal Template String===//
 const cardModal = projects.map((card) => ` <div class="project-card-bg">
     <div class="project-card">
-      <button type="button" class="close-project" onclick="closeProject()"><i class="fa-solid fa-xmark"></i></button>
+      <button type="button" class="close-project"><i class="fa-solid fa-xmark"></i></button>
       <div class="project-thumbnail">
         <img src="${card.image}" alt="">
       </div>
@@ -114,25 +111,28 @@ const cardModal = projects.map((card) => ` <div class="project-card-bg">
     </div>
   </div>`);
 
-//= ==check for Each button and show its relative Modal===//
-
 const buttons = Array.from(document.querySelectorAll('.modal-button'));
 const modalDiv = document.querySelector('.modal-div');
 
-// eslint-disable-next-line no-unused-vars
+// === Function to close Modal (Pop-Up) ===//
 function closeProject() {
+  const closeBtn = document.querySelector('.close-project');
   const modalContainer = document.querySelector('.project-card-bg');
-  modalContainer.remove();
+  closeBtn.addEventListener('click', () => {
+    modalContainer.remove();
+  });
 }
-
+// ===check for Each button and show its relative Modal===//
 for (let i = 0; i < buttons.length; i += 1) {
   if (i % 2 === 0) {
     buttons[i].addEventListener('click', () => {
       modalDiv.innerHTML += cardModal[i];
+      closeProject();
     });
   } else {
     buttons[i].addEventListener('click', () => {
       modalDiv.innerHTML += cardModal[i];
+      closeProject();
     });
   }
 }
